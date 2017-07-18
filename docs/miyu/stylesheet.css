@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* すべての要素のmarginとpaddingを0に設定します */
+* {
+  margin: 0;/* 要素の外側の余白を0にする */
+  padding: 0;/* 要素の内側の余白を0にする */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;/* フォントを指定する */
+}
+
+/* 全てのsection */
+
+section {
+  padding: 30px;
+  min-width: 950px;/* 幅の最小値を指定する */
+}
+
+
+/* h2のclass title */
+
+.title {
+  font-size: 30px;/* フォントの大きさを指定する */
+  margin-bottom: 30px;
+  font-family: 'fantasy', fantasy;
+  text-align: center;/* 文字・画像を中央にそろえる */
+}
+
+
+/* headerはここ */
+
+header {
+  text-align: center;
+    height: 400px;
+  background-image: url(img/buterfully.jpg);/* 背景画像を指定する */
+  background-size: cover;/* 背景画像をボックスいっぱいに指定する */
+  padding: 60px;
+  min-width: 920px;
+}
+
+header h2 {
+  color: #003377;/* フォントの色を指定する */
+}
+
+img {
+    height: 180px;
+}
+ul {
+    text-align: center;
+}
+
+ul li{
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+li a{
+    text-decoration: none;
+    color:#B10F2E;
+}
+nav {
+background-color:#F7B801;
+}
+
+nav a{
+    color:#ffffff;
+    
+}
+
+nav a:hover{
+    color:#B10F2E;
+}
+
+
+
+/* sectionのclass about */
+
+.about {
+  background-color: #ffffff;/* 背景色を指定する */
+  text-align: center;
+}
+
+.about h2 {
+  color: #DC143C;
+}
+
+.about p {
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 700px;/* 幅の最大値を指定する */
+  margin: 20px auto;
+}
+
+
+/* sectionのclass photo */
+
+.photo {
+  background-color: #B0CEDE;
+  color: #D3D3D3;
+  text-align: center;
+ margin: 10px;
+    width: 100%;
+}
+
+.photo h2 {
+color: #DC143C;
+}
+
+.photo div {
+  display: inline-block;
+/*    要素の表示形式を指定する */
+  /* 枠線を指定する */
+}
+.photo p{
+/*    clear: both;*/
+    color:#000000;
+    font-family: 'serif' georgia;
+    
+}
+
+
+/* sectionのclass information */
+.movie{
+    color:#F34213;
+    text-align: center;
+}
+
+.movie p{
+    color: #000000;
+}
+
+
+.information {
+  background-image: url(img/三角.jpg);
+  background-size: cover;
+}
+
+.information h2 {
+  color: #F34213;
+}
+
+.information div {
+  border: 8px solid #ffcc11;
+  background-color: #ffffff;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background-image: url(img/stripe.png);
+}
+
+.information h3 {
+  color: #B10F2E;
+  font-size: 28px;
+  text-align: center;
+}
+
+.information img {
+  float: left;/* 要素の回り込みを指定する */
+  margin-right: 20px;
+}
+
+
+/* footerはここ */
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  background: #ffffff;
+  padding: 10px 0;
+background-color: #ffcc11;
+}
+footer a{
+    text-decoration: none;
+    color: #000000;
+    display: inline-block;
+}
+
+footer img{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    top: 7px;
+    position: relative;
+}
+
+footer a:hover{
+    color:#B10F2E; 
+}
+
+
