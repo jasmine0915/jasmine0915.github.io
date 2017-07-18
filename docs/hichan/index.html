@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>SURVIVAL</title>
+    
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+    <style>
+       #map {
+        height: 300px;
+        width: 80%;
+       }
+    </style>
+<body>
+
+  <header>
+      <h1>SURVIVAL</h1>
+      <h2>～キミは、ゲームの勝者となれるのか～</h2>
+      
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#shop">サバイバルゲームについて</a></li>
+      <li><a href="#photo">おすすめのフィールド</a></li>
+      <li><a href="#price">エアガンラインナップ</a></li>
+      <li><a href="#access">アクセスマップ</a></li>
+    </ul>
+  </nav>
+
+  <section class="shop" id="shop">
+    <h2 class="title">サバイバルゲームについて</h2>
+    <p>
+      <img src="img/intanasyonaru.jpg">
+     <br>
+    サバイバルゲーム（サバゲー）は、フィールドで行う、エアガンとBB弾などを使用する日本発祥の競技で、なんと、世界中の競技人口は１５万人に達している
+        といわれているんです!!また、特に決まったルールはないので自由なところも魅力です!!
+    </p>
+  </section>
+
+  <section class="photo" id="photo">
+    <h2 class="title">おすすめのフィールド</h2>
+    <div class="big">
+      <img src="img/ヴァルハラ.jpg" width="470">
+      <h3>ヴァルハラ</h3>
+    </div>
+    <div class="box">
+      <div class="small">
+        <img src="img/ヴァルハラ２.jpg" width="210">
+        <h3></h3>
+      </div>
+      <div class="small">
+        <img src="img/ヴァルハラ３.jpg" width="210">
+        
+        <h3></h3>
+      </div>
+    </div>
+    <div class="link">
+        <a href="http://gundoujo.net/fields/kanto">その他のフィールドは、コチラから!!</a>   
+      </div>
+    <p>レンタル装備も充実しているので初心者でも安心！！「楽しくなくっちゃサバゲーじゃない」を念頭に活動中！！</p>
+  </section>
+    <section class="mov">
+      <iframe class="gan" width="560" height="315" src="https://www.youtube.com/embed/h8XlCNfc3uE" frameborder="0" allowfullscreen></iframe>
+        <img class="gan" src="img/gan1.jpg" width="500">
+        <img class="gan"  src="img/gan2.jpg" width="250">
+        <img class="gan" src="img/gan3.jpg" width="250">   
+  <section class="price" id="price">
+    <h2 class="title">
+      エアガンラインナップ
+    </h2>
+    <table>
+      <tr>
+        <th>定番商品</th>
+        <th>価格</th>
+      </tr>
+      <tr>
+        <td>カラシニコフ</td>
+        <td><span>24,625</span>円</td>
+      </tr>
+      <tr>
+        <td>デザートイーグル</td>
+        <td><span>39000</span>円</td>
+      </tr>
+      <tr>
+        <td>ジグザウエルP226E2ステンレスモデル</td>
+        <td><span>13,636</span>円</td>
+      </tr>
+      <tr class="season">
+        <th>新商品</th>
+        <th>価格</th>
+      </tr>
+      <tr>
+        <td class="tea">AA-12</td>
+        <td><span>62600</span>円</td>
+      </tr>
+      <tr>
+        <td>HK416デルタカスタム</td>
+        <td><span>69,800</span>円</td>
+      </tr>
+      <tr>
+        <td>CQBRブロック１</td>
+        <td><span>59,800</span>円</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="access" id="access">
+    <h2 class="title">アクセスマップ</h2>
+    <div id="col">
+      <h3>ヴァルハラ</h3>
+      <ul>
+        <li>住所：千葉県印西市瀬戸671</li>
+        <li>営業時間：8:30 〜 </li>
+      </ul>
+    </div>
+    <div id="col-img">
+        <img src="img/%E3%82%AD%E3%83%A3%E3%83%97%E3%83%81%E3%83%A3sinn.PNG">
+    </div>
+  </section>
+
+  <footer>&copy; 2017 ＠Touhoku</footer>
+</body>
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsU2qTafznx-D0rCDtaP_n76MoPomc&callback=initMap">
+    </script>
+</html>

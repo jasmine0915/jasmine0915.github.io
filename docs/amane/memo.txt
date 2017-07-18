@@ -1,0 +1,6 @@
+<p>search<br>character</p>
+       <input type="text" name="character" size="1" maxlength="1" class="character-input">
+memo:
+<h5 class="character-read-title"></5>
+<h6 class="character-read"></h6>
+<h7 class="character"></h7>

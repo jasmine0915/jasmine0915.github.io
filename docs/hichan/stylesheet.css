@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/* すべての要素のmarginとpaddingを0に設定します */
+* {
+  margin: 0;/* 要素の外側の余白を0にする */
+  padding: 0;/* 要素の内側の余白を0にする */
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;/* フォントを指定する */
+}
+
+/* 全てのh1 */
+
+h1 {
+  color: #ffffee;/* フォントの色を指定する */
+  font-size: 115px;/* フォントの大きさを指定する */
+  font-family: 'Impact';
+  text-align: center;/* 文字・画像を中央にそろえる */
+  /* 背景画像を指定する */
+  padding-top: 40px;
+}
+
+header h2 {
+    color: #ffffee;/* フォントの色を指定する */
+  font-size: 55px;/* フォントの大きさを指定する */
+  font-family: 'Impact';
+  text-align: center;/* 文字・画像を中央にそろえる */
+  /* 背景画像を指定する */
+}
+
+/* h2のclass title */
+
+.title {
+  font-size: 30px;
+  border-left-style: solid;/* 枠線のスタイルを指定する */
+  border-left-color: #663300;/* 枠線の色を指定する */
+  border-left-width: 10px;/* 枠線の幅を指定する */
+  padding-left: 15px;
+  margin-bottom: 50px;
+}
+
+/* headerはここ */
+
+header {
+  background-image: url(img/サバゲー.jpg);
+  height: 450px;
+  padding-top: 30px;
+    background-size: cover;
+}
+
+/* navはここ */
+
+nav {
+  background-color: #663300;/* 背景色を指定する */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;/* 文字の装飾を指定する */
+padding: 10px 0px;
+}
+
+nav a:hover {
+    background-color: #4d2600;
+/*    box-shadow: -4px -4px 2px 5px #4d2600 inset;*/
+    transition: 0.1s;
+}
+
+ul {
+  list-style-type: none;/* リストのマーカーを指定する */
+  padding-left: 0;
+}
+
+nav ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;/* 要素の表示形式を指定する */
+  margin-right: 40px;
+}
+
+/* sectionのclass shop */
+
+.shop {
+  background-color: #ffffdd;
+  color: #663300;
+  padding: 30px;
+}
+
+.shop p {
+  font-size: 20px;
+  background-color: #ffffff;
+  padding: 20px;
+  height: 300px;
+  border-radius: 30px;/* 枠線の角丸を指定する */
+}
+
+.shop img {
+  float: right;/* 要素の回り込みを指定する */
+}
+
+/* sectionのclass photo */
+
+.photo {
+  padding: 30px;
+  background-image: url(img/meisai.png);
+}
+
+.photo h2 {
+  color: #ffffff;
+  border-color: #ffcc11;
+}
+
+.photo p {
+  color: #ffffff;
+  clear: left;/* 要素の回り込みを解除する */
+  margin: 20px;
+}
+
+.big {
+  background-color: #ffffff;
+  width: 470px;/* 幅を指定する */
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 10px 10px 20px #000000;/* 影を指定する */
+  float: left;
+  transform: rotate(-5deg);/* 要素の回転を指定する */
+}
+
+.small {
+  background-color: #ffffff;
+  width: 320px;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 10px 10px 20px #000000;
+}
+
+.small img {
+    width:  300px;
+    height:  200px;
+    background-size:  contain; 
+}
+
+.box {
+  float: left;
+}
+
+.link {
+    float: right;
+    background-color: #ffffff;
+  width: 320px;
+  padding: 15px;
+  margin: 20px;
+  box-shadow: 10px 10px 20px #000000;
+}
+/* sectionのclass price */
+
+.mov {
+    margin: 0;
+    padding: 0;
+}
+
+.gan {
+    float: left;
+}
+
+.price {
+  padding: 30px;
+  background-image: url(img/wood.jpg);
+    clear: both;
+}
+
+.price h2 {
+  color: #ffffff;
+  border-left: 10px solid #ffcc11;
+}
+
+.price table {
+  background: #ffffdd;
+  width: 100%;
+  border-collapse: separate;/* 表の罫線を指定する */
+  border-spacing: 0;/* 表の罫線の隙間を指定する */
+}
+
+.price td {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+
+.price th {
+  border: 1px solid #000000;
+  padding: 10px;
+  text-align: left;
+  background: #ffcc11;
+}
+
+.season th {
+  background: #3dc;
+}
+
+/* sectionのclass access */
+
+.access {
+  background: #ffffdd;
+  color: #663300;
+  padding: 30px;
+  height: 400px;
+}
+
+.access h3 {
+  font-size: 50px;
+  font-family: 'Lobster', cursive;
+  margin-top: 0;
+}
+
+.access #col {
+  width: 30%;
+  float: left;
+}
+
+.access #col-img {
+  width: 70%;
+  float: left;
+}
+
+/* footerはここ */
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  background: #663300;
+}
